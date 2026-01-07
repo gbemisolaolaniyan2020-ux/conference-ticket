@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inconsolata:wght@200..900&display=swap');
+
+:root{
+--clr-Neutral-0: hsl(0, 0%, 100%);
+--clr-Neutral-300: hsl(252, 6%, 83%);
+--clr-Neutral-500: hsl(245, 15%, 58%);
+--clr-Neutral-700: hsl(245, 19%, 35%);
+--clr-Neutral-900: hsl(248, 70%, 10%);
+
+--clr-Orange-500: hsl(7, 88%, 67%);
+--clr-Orange-700: hsl(7, 71%, 60%);
+
+--clr-Gradient: linear-gradient(hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+
+--ff-main: Inconsolata;
+
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+body{
+    background: url(assets/images/background-desktop.png);
+    font-family: var(--ff-main);
+    width: 100%;
+    height: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100rem;
+    height: 90vh;
+}
+.journey{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.journey p{
+    color: var(--clr-Neutral-500);
+    font-weight: 700;
+}
+
+.journey h1{
+    color: white;
+    font-size: 50px;
+    margin: 20px;
+    /* margin-bottom: 0; */
+    width: 45rem;
+    text-align: center;
+
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: url(assets/images/background-mobile.png);
+    background: transparent;
+}
+
+.avatar{
+    margin: 20px;
+}
+.avatar p{
+    margin: 10px;
+    color: var(--clr-Neutral-500);
+}
+.avatar textarea{
+    color: var(--clr-Neutral-900);
+}
+.small{
+    color: var(--clr-Neutral-500);
+    width: 5%;
+}
+.name input{
+    width: 20rem;
+    height: 4rem;
+    border-radius: 10px;
+}
+.name h3{
+    color: var(--clr-Neutral-500);
+}
+
+.email input{
+    width: 20rem;
+    height: 4rem;
+    border-radius: 10px;
+}
+.email h3{
+    color: var(--clr-Neutral-500);
+}
+
+.git input{
+    width: 20rem;
+    height: 4rem;
+    border-radius: 10px;
+}
+.git h3{
+    color: var(--clr-Neutral-500);
+}
+
+button{
+    width: 15rem;
+    height: 2rem;
+    border-radius: 10px;
+   background: var(--clr-Orange-700);
+
+}
