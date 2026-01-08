@@ -30,14 +30,17 @@ body{
     font-family: var(--ff-main);
     width: 100%;
     height: 100%;
+    color: white;
 }
+
+
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100rem;
-    height: 90vh;
+    height: 100vh;
 }
 .journey{
     display: flex;
@@ -61,50 +64,95 @@ main{
 }
 
 .inputs{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: url(assets/images/background-mobile.png);
-    background: transparent;
+    /* background-color: url(assets/images/background-mobile.png); */
+    padding: 2rem;
+    border-radius: 16px;
+    /* backdrop-filter: blur(10px); */
 }
 
 .avatar{
-    margin: 20px;
+    color: var(--clr-Neutral-500);
+  
 }
 .avatar p{
     margin: 10px;
     color: var(--clr-Neutral-500);
 }
-.avatar textarea{
-    color: var(--clr-Neutral-900);
+
+.upload{
+    color: var(--clr-Neutral-700);
+}
+.upload input{
+    
+}
+.upload-content{
+    cursor: pointer;
+     border: 2px dashed transparent;
+    outline: 2px dashed rgba(255, 255, 255, 0.25);
+    outline-offset: 2px;
+    border-radius: 12px;
+    height: 17%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    /* display: block; */
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     
+   
+}
+.upload-content img{
+    font-size: 2rem;
+
+    
+}
+.upload-content p{
+    margin: 0.5rem;
+    color: var(--clr-Neutral-700);
+}
+.upload-content small{
+    opacity: 0.7;
+    width: 100%;
+    margin-top: 20px;
+    
 }
 .small{
     color: var(--clr-Neutral-500);
     width: 5%;
 }
-.name input{
-    width: 20rem;
-    height: 4rem;
-    border-radius: 10px;
-}
 .name h3{
-    color: var(--clr-Neutral-500);
+    color: var(--clr-Neutral-500 );
+   
+}
+.name{
+    /* backdrop-filter: var(--clr-Neutral-300); */
+}
+.name input{
+    width: 22rem;
+    height: 3rem;
+    border-radius: 10px;
+    opacity: 10%;
+    
 }
 
 .email input{
-    width: 20rem;
-    height: 4rem;
+    width: 22rem;
+    height: 3rem;
+    opacity: 10%;
     border-radius: 10px;
+
+   
 }
+
 .email h3{
     color: var(--clr-Neutral-500);
 }
 
 .git input{
-    width: 20rem;
-    height: 4rem;
+    width: 22rem;
+    height: 3rem;
     border-radius: 10px;
+    opacity: 10%;
 }
 .git h3{
     color: var(--clr-Neutral-500);
@@ -115,5 +163,8 @@ button{
     height: 2rem;
     border-radius: 10px;
    background: var(--clr-Orange-700);
+   text-align: center;
+  margin-left: 2.9rem;
+
 
 }

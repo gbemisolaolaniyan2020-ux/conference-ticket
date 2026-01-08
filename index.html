@@ -19,16 +19,19 @@
           <p>Secure your spot at next year's biggest coding conference.</p>
         </div>
 
-        <div class="inputs">
-          <div class="avatar">
-            <p>Upload Avatar</p>
-            <textarea rows="5" cols="40" name="avatar" id="" 
-          placeholder="Drag and drop or click to upload" ></textarea>
-          <br>
-          <small class="small"><img src="assets/images/icon-info.svg" alt=""> upload your photo 
-            (JPG or PNG max size:500KB).
-            </small>
-          </div>
+        <form class="inputs">
+          <label class="avatar">Upload Avatar</label>
+           <div class="upload">
+            <input type="file" id="avatar" hidden></div>
+            <label for="avatar" class="upload-content">
+              <span><img src="assets/images/icon-upload.svg" alt=""></span>
+              <p>Drag and drop or <strong>click to upload</strong></p>
+              <small class="small"><img src="assets/images/icon-info.svg" alt=""> upload your photo 
+              (JPG or PNG max size:500KB).
+              </small>
+          </label>
+           <br><br>
+
           <div class="name">
             <h3>Full Name</h3>
             <input type="text">
@@ -47,9 +50,9 @@
           <br>
           <div class="ticket">
           <!-- <input type="Generate My Ticket" placeholder="Generate My Ticket" > -->
-          <button>Generate My Ticket</button>
+          <button><a href="card.html">Generate My Ticket</a></button>
           </div>
-        </div>
+        </form>
       </main>
  
     </body>
