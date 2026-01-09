@@ -71,7 +71,7 @@ main{
 }
 
 .avatar{
-    color: var(--clr-Neutral-500);
+    /* color: var(--clr-Neutral-500); */
   
 }
 .avatar p{
@@ -125,37 +125,48 @@ main{
    
 }
 .name{
+    display: flex;
+    flex-direction: column;
     /* backdrop-filter: var(--clr-Neutral-300); */
 }
 .name input{
     width: 22rem;
     height: 3rem;
     border-radius: 10px;
-    opacity: 10%;
+    color: var(--clr-Neutral-700);
+
+    /* opacity: 10%; */
+    
     
 }
+
 
 .email input{
     width: 22rem;
     height: 3rem;
-    opacity: 10%;
+    /* opacity: 10%; */
     border-radius: 10px;
+    color: white;
 
    
 }
 
-.email h3{
-    color: var(--clr-Neutral-500);
+.email {
+    display: flex;
+    flex-direction: column;
+    /* color: var(--clr-Neutral-500); */
 }
 
 .git input{
     width: 22rem;
     height: 3rem;
     border-radius: 10px;
-    opacity: 10%;
+    /* opacity: 10%; */
 }
-.git h3{
-    color: var(--clr-Neutral-500);
+.git {
+    display: flex;
+    flex-direction: column ;
+    /* color: var(--clr-Neutral-500); */
 }
 
 button{
@@ -165,6 +176,21 @@ button{
    background: var(--clr-Orange-700);
    text-align: center;
   margin-left: 2.9rem;
+  text-decoration: none;
 
+}
+input{
+    color: white;
+    border: 1px solid red;
+    
+}
+input::placeholder { color: white; }
 
+input[type=text], input[type=email], input[type=username] {
+  background-color: var(--clr-Neutral-900);
+  color: white;
+   border: 12px ;
+    /* outline-offset: 2px; */
+    border-radius: 12px;
+    outline: 1px solid var(--clr-Neutral-500);
 }
