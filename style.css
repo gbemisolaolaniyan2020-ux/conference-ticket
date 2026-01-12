@@ -180,13 +180,14 @@ button{
 
 }
 
-a:visited {
+a{
   display: inline-block;
   padding: 10px 20px;
   color: var(--clr-Neutral-900);
   border-radius: 5px solid;
   text-align: center;
   text-decoration: none;
+  font-weight: bold;
 
 }
 
