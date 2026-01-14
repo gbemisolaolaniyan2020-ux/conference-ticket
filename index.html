@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Frontend Mentor | Conference ticket generator</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Conference ticket generator</title>
+</head>
 
-  </head>
-    <body>
-      <main>
-        <div><img src="assets/images/logo-full.svg" alt=""></div>
+<body>
+  <main>
+    <!-- no need to wrap the image tag in a div since it is the only element and it is a block element -->
+    <!-- <div><img src="assets/images/logo-full.svg" alt=""></div> -->
+    <img class="logo" src="assets/images/logo-full.svg" alt="">
 
-        <div class="journey">
-          <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
-          <p>Secure your spot at next year's biggest coding conference.</p>
+    <div class="journey">
+      <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <p>Secure your spot at next year's biggest coding conference.</p>
+    </div>
+
+    <!-- you can name it form-input-container -->
+    <form class="inputs">
+      <!-- looking at the labels, they have the same styling so no need to even give them a class -->
+      <div class="upload">
+        <label>Upload Avatar</label>
+        <div class="input-dotted">
+          <img src="assets/images/icon-upload.svg" alt="">
+          <p>Drag and drop or <strong>click to upload</strong></p>
+          <input type="file" id="avatar" hidden>
         </div>
+        <!-- so I brought this into the upload container no need to wrap in a separate div since the gap between them looks the same -->
+       
+        <!-- why did you wrap the image in a small tag???  -->
+        <!-- <small class="small"><img src="assets/images/icon-info.svg" alt=""> upload your photo
+          (JPG or PNG max size:500KB).
+        <p>Drag and drop or <strong>click to upload</strong></p>
+        </small> -->
+        <div class="upload-notification">
+          <img src="assets/images/icon-info.svg" alt="">
+          <small> upload your photo (JPG or PNG max size:500KB). </small>
+        </div>
+      </div>
 
-        <form class="inputs">
-          <label class="avatar">Upload Avatar</label>
-           <div class="upload">
-            <input type="file" id="avatar" hidden></div>
-            <label for="avatar" class="upload-content">
-              <span><img src="assets/images/icon-upload.svg" alt=""></span>
-              <p>Drag and drop or <strong>click to upload</strong></p>
-              <small class="small"><img src="assets/images/icon-info.svg" alt=""> upload your photo 
-              (JPG or PNG max size:500KB).
-              </small>
-          </label>
-           <br><br>
+      <div class="line-input">
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname">
+      </div>
+      
+      <div class="line-input">
+        <label for="email">Email</label>
+        <input type="email" id="email" Email placeholder="example@email">
+      </div>
+      
+      <div class="line-input">
+        <label for="username">GitHub Username</label>
+        <input type="username" id="username" placeholder="@yourusername">
+      </div>
+      
+      <div class="btn">
+        <button>Generate My Ticket</button>
+      </div>
+    </form>
+  </main>
 
-          <div class="name">
-            <label for="fname">Full Name</label>
-            <input type="text" id="fname">
-          </div>
-          <br>
+</body>
 
-          <div class="email">
-          <label for="email">Email</label>
-          <input type="email" id="email" Email placeholder="example@email">
-          </div>
-          <br>
-          <div class="git">
-            <label for="username">GitHub Username</label>
-            <input type="username" id="username" placeholder="@yourusername">
-          </div>
-          <br>
-          <div class="ticket">
-          <!-- <input type="Generate My Ticket" placeholder="Generate My Ticket" > -->
-          <button><a href="card.html">Generate My Ticket</a></button>
-          </div>
-        </form>
-      </main>
- 
-    </body>
 </html>
